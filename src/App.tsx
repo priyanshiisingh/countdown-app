@@ -5,6 +5,7 @@ import "./App.css";
 import CardBlock from "./components/CardBlock/CardBlock";
 import Intro from "./components/Intro/Intro";
 import SocialIcons from "./components/SocialIcons/SocialIcons";
+import DateInput from "./components/DateInput/DateInput";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="BgStars">
         <Intro />
         <CardBlock />
+        <DateInput />
       </div>
       <div className="Hills">
         <SocialIcons />

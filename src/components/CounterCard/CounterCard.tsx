@@ -4,18 +4,17 @@ import React from "react";
 import "../../assets/styles/CounterCardStyles.css";
 import { CardTitle } from "../../assets/styles/CardStyles";
 
-interface Title {
+interface CounterText {
+  counter: string;
   text: string;
 }
 
-const CounterCard = (props: Title) => {
-  // const [timer, setTimer] = useState("");
-
+const CounterCard = (props: CounterText) => {
   return (
     <div>
       <div className="flip-card">
         <div className="flip-card-inner">
-          <div className="flip-card-front">10</div>
+          <div className="flip-card-front">{props.counter}</div>
           <div className="flip-card-back"></div>
         </div>
       </div>
