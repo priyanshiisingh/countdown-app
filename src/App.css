@@ -2,6 +2,20 @@
     text-align: center;
 }
 
+.BgStars {
+    height: 569px;
+    background-image: url("./assets/images/bg-stars.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Hills {
+    height: 197px;
+    background-image: url("./assets/images/pattern-hills.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;

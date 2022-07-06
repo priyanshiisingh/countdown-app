@@ -1,13 +1,23 @@
 import React from "react";
-import "../../assets/styles/CounterCardStyles.css";
 
-const CounterCard = () => {
+//styles
+import "../../assets/styles/CounterCardStyles.css";
+import { CardTitle } from "../../assets/styles/CardStyles";
+
+interface Title {
+  text: string;
+}
+
+const CounterCard = (props: Title) => {
   return (
-    <div className="flip-card">
-      <div className="flip-card-inner">
-        <div className="flip-card-front">CounterCard</div>
-        <div className="flip-card-back">card back</div>
+    <div>
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">CounterCard</div>
+          <div className="flip-card-back"></div>
+        </div>
       </div>
+      <CardTitle>{props.text}</CardTitle>
     </div>
   );
 };

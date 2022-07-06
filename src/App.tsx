@@ -2,14 +2,20 @@ import React from "react";
 import "./App.css";
 
 //components
-import Background from "./components/Background/Background";
-import CounterCard from "./components/CounterCard/CounterCard";
+import CardBlock from "./components/CardBlock/CardBlock";
+import Intro from "./components/Intro/Intro";
+import SocialIcons from "./components/SocialIcons/SocialIcons";
 
 function App() {
   return (
     <div className="App">
-      <Background />
-      <CounterCard />
+      <div className="BgStars">
+        <Intro />
+        <CardBlock />
+      </div>
+      <div className="Hills">
+        <SocialIcons />
+      </div>
     </div>
   );
 }
