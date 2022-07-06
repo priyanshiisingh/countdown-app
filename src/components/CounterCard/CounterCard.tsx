@@ -5,8 +5,8 @@ import "../../assets/styles/CounterCardStyles.css";
 import { CardTitle } from "../../assets/styles/CardStyles";
 
 interface CounterText {
-  counter: string;
-  text: string;
+  counter: number;
+  title: string;
 }
 
 const CounterCard = (props: CounterText) => {
@@ -18,7 +18,7 @@ const CounterCard = (props: CounterText) => {
           <div className="flip-card-back"></div>
         </div>
       </div>
-      <CardTitle>{props.text}</CardTitle>
+      <CardTitle>{props.title}</CardTitle>
     </div>
   );
 };

@@ -5,19 +5,23 @@ import { CounterCards } from "../../assets/styles/CardStyles";
 import CounterCard from "../../components/CounterCard/CounterCard";
 
 const CardBlock = () => {
-  const dateFormat = new Date();
+  var countDownDate = new Date("Jan 5, 2023 15:30:30").getTime();
+  const now = new Date().getTime();
+  var difference = countDownDate - now;
 
-  const dayNum = dateFormat.getDate().toString();
-  const hourNum = dateFormat.getHours().toString();
-  const minsNum = dateFormat.getMinutes().toString();
-  const secsNum = dateFormat.getSeconds().toString();
+  var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  var hours = Math.floor(
+    (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
   return (
     <CounterCards>
-      <CounterCard counter={dayNum} text={"Days"} />
-      <CounterCard counter={hourNum} text={"Hours"} />
-      <CounterCard counter={minsNum} text={"Minutes"} />
-      <CounterCard counter={secsNum} text={"Seconds"} />
+      <CounterCard counter={days} title={"Days"} />
+      <CounterCard counter={hours} title={"Hours"} />
+      <CounterCard counter={minutes} title={"Minutes"} />
+      <CounterCard counter={seconds} title={"Seconds"} />
     </CounterCards>
   );
 };
