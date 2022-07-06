@@ -1,7 +1,7 @@
 .flip-card {
     background-color: transparent;
-    width: 130px;
-    height: 130px;
+    width: 125px;
+    height: 115px;
     perspective: 1000px;
 }
 
@@ -31,7 +31,13 @@
 
 .flip-card-front {
     background-image: linear-gradient( 180deg, rgba(44, 44, 68, 255) 50%, rgba(52, 54, 79, 255) 50%);
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(345, 95%, 68%);
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
 }
 
 .flip-card-back {

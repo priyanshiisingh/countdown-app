@@ -13,7 +13,7 @@ const CounterCard = (props: Title) => {
     <div>
       <div className="flip-card">
         <div className="flip-card-inner">
-          <div className="flip-card-front">CounterCard</div>
+          <div className="flip-card-front">10</div>
           <div className="flip-card-back"></div>
         </div>
       </div>
