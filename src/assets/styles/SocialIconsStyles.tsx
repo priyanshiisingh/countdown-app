@@ -5,4 +5,10 @@ const IconBlock = styled.div`
   justify-content: space-around;
 `;
 
-export { IconBlock };
+const PATH = styled.path`
+  &:hover {
+    fill: hsl(345, 95%, 68%);
+  }
+`;
+
+export { IconBlock, PATH };

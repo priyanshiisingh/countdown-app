@@ -9,6 +9,8 @@ interface Title {
 }
 
 const CounterCard = (props: Title) => {
+  // const [timer, setTimer] = useState("");
+
   return (
     <div>
       <div className="flip-card">
